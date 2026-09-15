@@ -1,0 +1,14 @@
+# Compiled Java bytecode
+bin/
+*.class
+
+# IDE and Editor files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Runtime data & logs
+data/scan_history.txt
