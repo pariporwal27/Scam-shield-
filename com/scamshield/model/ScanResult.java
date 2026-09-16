@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Holds the output of a scan performed by the RiskEngine.
- */
+
 public class ScanResult {
     private final String requestId;
     private final int totalScore;
