@@ -4,9 +4,6 @@ import com.scamshield.model.ScanRequest;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Rule that detects high-pressure time-sensitive phrasing often used in coercion scams.
- */
 public class UrgencyRule implements ScamRule {
     private final List<String> urgencyPhrases;
     private String lastTriggeredDescription = "";
@@ -37,7 +34,7 @@ public class UrgencyRule implements ScamRule {
             }
         }
 
-        int score = count * 15; // 15 points per urgency phrase matched
+        int score = count * 15;
         if (score > 0) {
             this.lastTriggeredDescription = "High pressure urgency language found: " + matched.toString();
         } else {
