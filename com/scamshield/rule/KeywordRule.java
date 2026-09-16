@@ -4,16 +4,13 @@ import com.scamshield.model.ScanRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Rule that scans text for high-risk scam keywords using a weighted HashMap lookup.
- */
 public class KeywordRule implements ScamRule {
     private final Map<String, Integer> keywordWeights;
     private String lastTriggeredDescription = "";
 
     public KeywordRule() {
         this.keywordWeights = new HashMap<>();
-        // Populate default high-risk scam keywords and weights
+    
         keywordWeights.put("lottery", 25);
         keywordWeights.put("winner", 20);
         keywordWeights.put("account blocked", 30);
