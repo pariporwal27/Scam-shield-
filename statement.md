@@ -27,9 +27,9 @@ With the advent of morden era, social engineering attacks, phishing scams and cy
 ---
 
 ## 3. Target Users
-***Regular Smartphone and Computer Users**: Users who want to quickly validate any questionable messages or text message notifications without clicking on any links.
-***Senior and Vulnerable Internet Users**: Users who are highly prone to lottery scams, urgent banking notifications, and credential phishing attempts.
-***Employees of Small Businesses**: Workers responsible for dealing with customer service and vendors' communication needs a quick way to validate their incoming requests.
+* **Regular Smartphone and Computer Users**: Users who want to quickly validate any questionable messages or text message notifications without clicking on any links.
+* **Senior and Vulnerable Internet Users**: Users who are highly prone to lottery scams, urgent banking notifications, and credential phishing attempts.
+* **Employees of Small Businesses**: Workers responsible for dealing with customer service and vendors' communication needs a quick way to validate their incoming requests.
 ***Computer Science Students and Security Afficionados**: Students learning cybersecurity concepts, heuristic analysis, and object-oriented programming principles.
 
 ---
