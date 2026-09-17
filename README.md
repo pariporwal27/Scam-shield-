@@ -4,13 +4,13 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Digital scams frequently employ psychological manipulation techniques such as **urgency**, **financial incentives**, and **obfuscated/IP-based URLs**. ScamShield scans input data against structured detection heuristics to compute a normalized risk score ($0–100\%$) and classifies threats into severity tiers (`SAFE`, `SUSPICIOUS`, `HIGH_RISK`, `CRITICAL`).
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 
 - **Multi-Vector Threat Analysis**: Evaluates keywords, high-pressure urgency language, and suspicious URL patterns.
 - **Rule-Based Risk Engine**: Modular scoring aggregator built on the **Strategy Design Pattern**.
@@ -20,7 +20,7 @@ Digital scams frequently employ psychological manipulation techniques such as **
 
 ---
 
-## 🏗️ Software Architecture
+##  Software Architecture
 
 ScamShield follows a 4-tier **Layered Architecture** adhering to SOLID principles:
 
@@ -54,7 +54,7 @@ ScamShield follows a 4-tier **Layered Architecture** adhering to SOLID principle
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 ScamShield/
@@ -88,7 +88,7 @@ ScamShield/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 * **Java Development Kit (JDK 8 or higher)** installed on your machine.
@@ -117,7 +117,7 @@ ScamShield/
 
 ---
 
-## 🧪 Sample Test Cases
+##  Sample Test Cases
 
 | Scenario | Sample Input | Expected Risk Level |
 | :--- | :--- | :--- |
@@ -127,6 +127,3 @@ ScamShield/
 | **Normal Message** | `Hey! Are we still meeting for group study at the library tomorrow at 4 PM?` | `SAFE` (0%) |
 
 ---
-
-## 📄 License
-This project is open-source under the [MIT License](LICENSE).
