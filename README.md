@@ -1,6 +1,5 @@
 #  ScamShield – Fraud & Scam Detection Assistant
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Architecture](https://img.shields.io/badge/Architecture-Layered%20%2F%20Modular-blue.svg)](#software-architecture)
 
 **ScamShield** is a lightweight, rule-based command-line security assistant developed in Java. It analyzes messages, SMS texts, email bodies, and suspicious web links to determine the likelihood of fraud using an extensible risk scoring engine.
