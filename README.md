@@ -1,22 +1,26 @@
-#  ScamShield – Fraud & Scam Detection Assistant
+#  ScamShield – Fraud and Scam Detection Assistant
 
-**ScamShield** is a lightweight, rule-based command-line security assistant developed in Java. It analyzes messages, SMS texts, email bodies, and suspicious web links to determine the likelihood of fraud using an extensible risk scoring engine.
+ScamShield is a rule-based command line security assistant created in Java. It looks at messages SMS texts, email content and strange web links to see if there is a chance of fraud using a system that can add rules for risk scoring.
 
 ---
 
 ##  Project Overview
 
-Digital scams frequently employ psychological manipulation techniques such as **urgency**, **financial incentives**, and **obfuscated/IP-based URLs**. ScamShield scans input data against structured detection heuristics to compute a normalized risk score ($0–100\%$) and classifies threats into severity tiers (`SAFE`, `SUSPICIOUS`, `HIGH_RISK`, `CRITICAL`).
+Digital scams often use ways to make people feel worried offer money or hide the web addresses. ScamShield looks at the information you give it. Checks it against set ways to find out the chance of a problem. It gives a score from 0 to 100 percent. Puts the problem into different levels of danger (SAFE, SUSPICIOUS, HIGH_RISK CRITICAL).
 
 ---
 
 ##  Key Features
 
-- **Multi-Vector Threat Analysis**: Evaluates keywords, high-pressure urgency language, and suspicious URL patterns.
-- **Rule-Based Risk Engine**: Modular scoring aggregator built on the **Strategy Design Pattern**.
-- **Audit & History Persistence**: Automatically records scan timestamps, scores, risk levels, and triggered heuristics to local storage.
-- **Asynchronous Background Scanner**: Multithreaded batch processing powered by `ExecutorService`.
-- **Zero External Dependencies**: Pure core Java standard library (runs on any JDK without third-party frameworks).
+- **Multi-Vector Threat Analysis**: Looks at words, urgent language and strange web addresses.
+
+- **Rule-Based Risk Engine**: A system that can change and add rules using the Strategy Design Pattern.
+
+- **Audit and History Persistence**: Keeps a record of when scans happened the scores, the danger levels and the rules that were used.
+
+- **Asynchronous Background Scanner**: Uses threads to do several scans at the same time with ExecutorService.
+
+- **Zero External Dependencies**: Uses the basic Java library (works with any JDK without other programs).
 
 ---
 
