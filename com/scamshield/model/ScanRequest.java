@@ -3,9 +3,6 @@ package com.scamshield.model;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-/**
- * Represents an incoming message or URL submitted for scam detection.
- */
 public class ScanRequest {
     private final String requestId;
     private final String rawContent;

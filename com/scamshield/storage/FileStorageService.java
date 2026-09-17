@@ -11,9 +11,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Text-file based persistence implementation using FileReader/FileWriter.
- */
 public class FileStorageService implements StorageService {
     private final String filePath;
 

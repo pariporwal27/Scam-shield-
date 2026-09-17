@@ -8,9 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Core engine that aggregates scam detection rules and computes total risk score.
- */
+
 public class RiskEngine {
     private final List<ScamRule> rules;
 

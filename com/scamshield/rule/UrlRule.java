@@ -5,11 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-/**
- * Rule that inspects URLs for suspicious indicators (IP addresses, dangerous TLDs, URL shorteners).
- */
+
 public class UrlRule implements ScamRule {
-    // Regex pattern for IP address hostnames (e.g. http://192.168.1.1/login)
+   
     private static final Pattern IP_PATTERN = Pattern.compile("https?://\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}.*");
     private final List<String> suspiciousTlds;
     private final List<String> urlShorteners;
@@ -31,13 +29,12 @@ public class UrlRule implements ScamRule {
         int score = 0;
         StringBuilder reasons = new StringBuilder();
 
-        // Check 1: Raw IP Address Hostname
         if (IP_PATTERN.matcher(content).find()) {
             score += 40;
             reasons.append("Raw IP address used in link (+40 points). ");
         }
 
-        // Check 2: Suspicious TLDs
+   
         for (String tld : suspiciousTlds) {
             if (content.contains(tld)) {
                 score += 25;
@@ -46,7 +43,6 @@ public class UrlRule implements ScamRule {
             }
         }
 
-        // Check 3: URL Shortener
         for (String shortener : urlShorteners) {
             if (content.contains(shortener)) {
                 score += 20;

@@ -9,9 +9,6 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Multithreaded service for asynchronous batch scanning.
- */
 public class BackgroundScanService {
     private final RiskEngine riskEngine;
     private final StorageService storageService;

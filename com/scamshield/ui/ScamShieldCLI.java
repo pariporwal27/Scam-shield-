@@ -10,9 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Command-Line Interface controller for user interaction.
- */
+
 public class ScamShieldCLI {
     private final RiskEngine engine;
     private final StorageService storage;
