@@ -1,6 +1,5 @@
 #  ScamShield – Fraud & Scam Detection Assistant
 
-[![Java](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://www.oracle.com/java/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Architecture](https://img.shields.io/badge/Architecture-Layered%20%2F%20Modular-blue.svg)](#software-architecture)
 
