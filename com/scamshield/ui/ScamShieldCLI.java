@@ -29,7 +29,7 @@ public class ScamShieldCLI {
     public void start() {
         boolean running = true;
         System.out.println("=================================================");
-        System.out.println("   🛡️  ScamShield – Fraud & Scam Assistant  🛡️   ");
+        System.out.println("         ScamShield Fraud & Scam Assistant       ");
         System.out.println("=================================================");
 
         while (running) {
