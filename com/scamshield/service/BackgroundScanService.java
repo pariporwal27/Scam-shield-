@@ -27,7 +27,7 @@ public class BackgroundScanService {
             for (String message : batchMessages) {
                 ScanRequest request = new ScanRequest(message, "BATCH_FILE");
                 ScanResult result = riskEngine.analyze(request);
-                try 
+                try {
                     storageService.saveResult(result);
                     scanned++;
                 } catch (Exception e) {
