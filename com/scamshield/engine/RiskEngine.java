@@ -1,4 +1,4 @@
-package com.scamshield.engine
+package com.scamshield.engine;
 
 import com.scamshield.model.ScanRequest;
 import com.scamshield.model.ScanResult;
