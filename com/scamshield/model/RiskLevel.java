@@ -3,7 +3,7 @@ package com.scamshield.model;
 public enum RiskLevel {
     SAFE("Low ti no threat detected",0,29),
     SUSPICIOUS("Moderate risk detected. Proceed with caution.", 30, 59),
-    HIGH_RISK("High likelihood of scam/fraud", 60, 84),
+    HIGH_RISK("High likelihood of scam/fraud!", 60, 84),
     CRITICAL("Dangerous scam attempt! Do not click links or share details.", 85, 100);
 
     private final String description;
