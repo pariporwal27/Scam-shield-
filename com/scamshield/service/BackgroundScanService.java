@@ -37,7 +37,6 @@ public class BackgroundScanService {
             System.out.println("[BACKGROUND SCAN COMPLETED] Successfully scanned and saved " + scanned + " items!\n");
         });
     }
-
     public void shutdown() {
         executorService.shutdown();
     }
