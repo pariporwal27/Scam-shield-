@@ -1,43 +1,41 @@
 # Problem Statement & Project Scope: ScamShield
 
 ## 1. Problem Statement
-In the modern digital landscape, communication channels such as SMS, instant messaging, and email are frequently exploited by cybercriminals to execute social engineering attacks, phishing schemes, and financial fraud. Attackers use sophisticated psychological triggers—including artificial urgency, fear of account suspension, and lucrative financial promises—often coupled with obfuscated or raw IP-based hyperlinks to deceive unsuspecting users. Many existing security tools are heavyweight, require constant cloud connectivity, or consume significant system resources. There is a strong need for an accessible, lightweight, rule-based security assistant that evaluates message content and links locally, delivering transparent risk scores and actionable threat breakdowns without compromising privacy.
+With the advent of morden era, social engineering attacks, phishing scams and cyberfraudsters have often made use of the existing communication channels, including SMS, instant messaging and emails. These attacks take advantage of various psychological factors, which include creating artificial urgency, fear of getting their account suspended and lucrative offers with money involved, accompanied by hidden or raw IP links in order to dupe unsuspecting users. The existing cybersecurity measures are either cumbersome, always connected to the cloud or heavy on system resource consumption. Therefore, there exists an urgent need for an easy-to-use security assistant which performs local evaluation of messages and links and provides risk score.
 
 ---
 
 ## 2. Project Scope
 
-### In-Scope:
-* **Text & URL Ingestion**: Real-time console ingestion of SMS content, email excerpts, or web URLs.
-* **Multi-Layered Heuristic Analysis**:
-  * Categorized dictionary lookup for financial and identity fraud keywords.
-  * Natural language detection of high-pressure urgency and coercion language.
-  * Heuristic analysis of web hyperlinks (raw IP hostnames, suspicious TLDs, and URL shorteners).
-* **Deterministic Risk Scoring Engine**: A normalized scoring engine ($0–100\%$) calculating weighted threat contributions.
-* **Risk Categorization**: Mapping numerical risk scores to discrete threat tiers (`SAFE`, `SUSPICIOUS`, `HIGH_RISK`, `CRITICAL`).
-* **Audit Persistence**: Automatic recording of scan history with timestamps and UUIDs in a structured local log file.
-* **Asynchronous Multithreading**: Background thread pool execution for batch file scans to maintain non-blocking UI responsiveness.
-* **Interactive CLI Interface**: An intuitive, robust menu-driven interface with comprehensive error handling.
+### In Scope:
+* **Text/URL Ingestion**: In-console text ingest of SMS message contents, email snippets, and/or web URLs.
+* **Heuristic Analysis Across Multiple Layers**:
+  * Dictionary search of categorized fraud keywords in financial and identity fraud schemes.
+  * Detection of natural languages in high-stress urgency and coercive language schemes.
+  * Heuristic analysis of website hyperlinks (IP addresses of hosts, risky TLDs, and URL shorteners).
+* **Normalized Deterministic Threat Scoring Engine**: Normalized risk score engine ($0-100\%$) that assigns threat contributions with weights.
+* **Risk Categories**: Mapping numeric risk scores into distinct threat categories (`SAFE`, `SUSPICIOUS`, `HIGH_RISK`, `CRITICAL`).
+* **Audit Logging Persistency**: Automated logging of the history of each scan with timestamping and UUID in local log files.
+* **Asynchronous Multithreading**: Asynchronous thread pool execution for batch file scans and maintaining non-blocking UIs.
+* **Interactive Command Line Interface**: User-friendly menu-driven command line with full error handling.
 
-### Out-of-Scope (for Current Release):
-* Direct cloud-based API calls or external network scraping.
-* Heavy deep-learning / neural network training pipelines.
-* Relational database systems (RDBMS) (abstracted via storage interfaces for future updates).
-* Graphical User Interface (GUI) / Mobile applications.
+### Out-of-scope (for current release):
+* Cloud-based API requests or web scraping from external network.
+* Deep learning / neural networks and heavy training pipeline for machine learning.
+* Relational databases systems (RDBMS) (abstracted through storage interfaces).
 
 ---
 
 ## 3. Target Users
-* **Everyday Smartphone & Computer Users**: Individuals seeking quick verification of suspicious messages or SMS alerts before clicking links.
-* **Elderly & Vulnerable Internet Users**: Individuals most susceptible to lottery scams, urgent bank alerts, and credential phishing.
-* **Small Business Employees**: Staff handling customer support and vendor correspondence who need a rapid, offline validation check for inbound inquiries.
-* **Computer Science Students & Security Enthusiasts**: Learners studying cybersecurity principles, heuristic evaluation, and modular object-oriented software architecture.
+* **Regular Smartphone and Computer Users**: Users who want to quickly validate any questionable messages or text message notifications without clicking on any links.
+* **Senior and Vulnerable Internet Users**: Users who are highly prone to lottery scams, urgent banking notifications, and credential phishing attempts.
+* **Employees of Small Businesses**: Workers responsible for dealing with customer service and vendors' communication needs a quick way to validate their incoming requests.
+***Computer Science Students and Security Afficionados**: Students learning cybersecurity concepts, heuristic analysis, and object-oriented programming principles.
 
 ---
-
 ## 4. High-Level Features
-1. **Interactive Message & URL Analyzer**: Instant scanning of arbitrary text and hyperlinks with detailed rule-by-rule diagnostic outputs.
-2. **Pluggable Strategy Rules Engine**: Extensible detection modules adhering to the Open/Closed Principle.
-3. **Structured Audit Log**: Persistent storage with options to view past scan history or clear history records.
-4. **Multithreaded Batch Scanner**: Background worker pool processing bulk records concurrently without freezing user interaction.
-5. **Zero-Dependency Architecture**: Built entirely on core standard Java (JDK 8+) with zero external runtime libraries.
+1. **Message & URL Interactive Analyzer**: Quick analysis of any input data including hyperlinks with comprehensive outputs per each rule.
+2. **Extensible Strategy Rules Engine**: Detecting engines built according to the Open/Closed Principle.
+3. **Audit Log with Persistence**: Persistent audit log storage which could be accessed to review past scans or cleared completely.
+4. **Batch Multithreading Scanner**: Multithreaded scanner which works in the background analyzing bulk data without freezing the GUI.
+5. **Pure Java Architecture**: Application developed using only core standard Java libraries (JDK 8+).
